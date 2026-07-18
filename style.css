@@ -1,0 +1,380 @@
+/* ========================================
+   LEVEL 2 - TASK 1: BOOTSTRAP FRAMEWORK
+   Custom Styles
+   ======================================== */
+
+/* ----- Global Styles ----- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #2563eb, #06b6d4);
+    background-size: 300% 300%;
+    animation: bgMove 12s infinite ease;
+    min-height: 100vh;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ----- Glass Navigation ----- */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(18px) !important;
+    -webkit-backdrop-filter: blur(18px) !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.glass-nav .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: 0.3s;
+    border-radius: 30px;
+    padding: 8px 18px;
+}
+
+.glass-nav .navbar-nav .nav-link:hover {
+    background: #00e5ff !important;
+    color: #111827 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+}
+
+.glass-nav .navbar-nav .nav-link.active {
+    background: #00e5ff !important;
+    color: #111827 !important;
+}
+
+/* ----- Hero Section ----- */
+.hero-section {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 60px 20px !important;
+}
+
+.animate-title {
+    animation: slideDown 0.8s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #00e5ff, #06b6d4);
+    border-radius: 2px;
+    margin: 15px auto;
+}
+
+/* ----- Glass Cards ----- */
+.glass-card {
+    background: rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 15px !important;
+    transition: all 0.4s ease !important;
+    overflow: hidden;
+    color: white !important;
+}
+
+.glass-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3) !important;
+    border-color: rgba(0, 229, 255, 0.3) !important;
+}
+
+.glass-card .card-img-top {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    height: 200px;
+    object-fit: cover;
+}
+
+.glass-card .card-title {
+    color: white !important;
+    font-weight: 600;
+}
+
+.glass-card .card-text {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.glass-card .badge {
+    font-weight: 600;
+    padding: 5px 12px;
+}
+
+/* Custom Badge Colors */
+.bg-purple {
+    background-color: #6c5ce7 !important;
+    color: white !important;
+}
+
+.btn-outline-purple {
+    color: #6c5ce7 !important;
+    border-color: #6c5ce7 !important;
+}
+
+.btn-outline-purple:hover {
+    background: #6c5ce7 !important;
+    color: white !important;
+}
+
+/* ----- Grid Demo Items ----- */
+.grid-demo {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.grid-item {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: 0.3s;
+    color: white;
+    height: 100%;
+}
+
+.grid-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item-featured {
+    background: rgba(0, 229, 255, 0.1);
+    border-color: rgba(0, 229, 255, 0.2);
+}
+
+.grid-item-large {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 229, 255, 0.3);
+    min-height: 200px;
+}
+
+.grid-item h5 {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.grid-item p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0;
+}
+
+.grid-item .display-4 {
+    font-size: 2.5rem;
+}
+
+/* ----- Grid Info ----- */
+.grid-info {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bg-dark-50 {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* ----- Form Styles ----- */
+.form-control {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    transition: 0.3s !important;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: #00e5ff !important;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.1) !important;
+    color: white !important;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.form-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+/* ----- Contact Details Box ----- */
+.contact-details-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-bottom: 5px;
+}
+
+.contact-info-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.contact-info-item i {
+    font-size: 20px;
+    min-width: 30px;
+}
+
+.contact-info-item span {
+    font-size: 15px;
+    word-break: break-all;
+}
+
+/* ----- Buttons ----- */
+.btn-primary {
+    background: linear-gradient(135deg, #00e5ff, #06b6d4) !important;
+    border: none !important;
+    padding: 12px !important;
+    font-weight: 600 !important;
+    transition: 0.3s !important;
+}
+
+.btn-primary:hover {
+    transform: scale(1.02) !important;
+    box-shadow: 0 5px 25px rgba(0, 229, 255, 0.3) !important;
+}
+
+.btn-outline-info {
+    border-color: rgba(0, 229, 255, 0.5) !important;
+    color: #00e5ff !important;
+    padding: 12px !important;
+    font-weight: 600 !important;
+    transition: 0.3s !important;
+}
+
+.btn-outline-info:hover {
+    background: #00e5ff !important;
+    color: #111827 !important;
+    transform: scale(1.02) !important;
+    box-shadow: 0 5px 25px rgba(0, 229, 255, 0.3) !important;
+}
+
+/* ----- Footer ----- */
+.footer {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+@media (max-width: 992px) {
+    .hero-section {
+        padding: 40px 15px !important;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.2rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    .grid-item-large {
+        min-height: auto;
+    }
+    
+    .glass-card .card-img-top {
+        height: 180px;
+    }
+    
+    .contact-info-item {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .contact-info-item i {
+        font-size: 18px;
+        min-width: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    .glass-card .card-img-top {
+        height: 150px;
+    }
+    
+    .grid-item {
+        padding: 15px;
+    }
+    
+    .grid-item .display-4 {
+        font-size: 2rem;
+    }
+    
+    .contact-info-item {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+    
+    .contact-info-item i {
+        font-size: 16px;
+        min-width: 20px;
+    }
+}
+
+/* ========================================
+   SCROLL ANIMATIONS
+   ======================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card, .grid-item {
+    animation: fadeInUp 0.8s ease;
+}
+
+.card:nth-child(2) { animation-delay: 0.1s; }
+.card:nth-child(3) { animation-delay: 0.2s; }
+.card:nth-child(4) { animation-delay: 0.3s; }
+.card:nth-child(5) { animation-delay: 0.4s; }
+.card:nth-child(6) { animation-delay: 0.5s; }
